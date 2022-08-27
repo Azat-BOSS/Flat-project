@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./vendor/nouislider.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>MarkWeb Flat</title>
+</head>
+<body class="body">
+  <!-- header -->
+<div class="page">
+  <header class="header">
+    <div class="header__inner">
+      <img src="./images/logo/logoFirst.svg" alt="логотип" class="header__logo">
+
+      <div class="header__contact-info">
+        <a href="#" class="header__number">8-800-222-37-90</a>
+        <p class="header__work-time">Работаем ежедневно с 10:00 до 20:00</p>
+      </div>
+      
+      <nav class="header__links">
+        <li class="header__link-container">
+          <a href="#" class="header__link">Квартиры</a>
+          <a href="#" class="header__link-pseudo">Квартиры</a>
+       </li>
+       <li class="header__link-container">
+          <a href="#" class="header__link">Ипотека</a>
+          <a href="#" class="header__link-pseudo">Ипотека</a>
+       </li>
+       <li class="header__link-container">
+          <a href="#" class="header__link">Коммерция</a>
+          <a href="#" class="header__link-pseudo">Коммерция</a>
+       </li>
+       <li class="header__link-container">
+          <a href="#" class="header__link">Управляющая компания</a>
+          <a href="#" class="header__link-pseudo">Управляющая компания</a>
+       </li>
+     
+      </nav>
+
+      <button class="header__brg-menu"></button>
+   </div>
+  </header>
+
+  <!-- mainSection -->
+    <main class="main">
+      <section class="intro">
+        <div style="background-color: rgba(0, 0, 0, .7); z-index: 0;" class="intro__black-cover"></div>
+        <div class="intro__container">
+          <img src="./images/logo/logoSecond.svg" alt="картинка флажок" class="intro__image-banderole">
+          <div class="intro__block-links">
+            <ul class="intro__first-links">
+              <li class="intro__link">Северный парк</li>
+              <li class="intro__link">Станция столичная</li>
+              <li class="intro__link">Лето</li>
+              <li class="intro__link">Сказочный сад</li>
+              <li class="intro__link">Краски</li>
+            </ul>
+            <ul class="intro__second-links">
+              <li class="intro__link">Ренесанс</li> 
+              <li class="intro__link">Компасс Сити</li>
+              <li class="intro__link">Зима</li>
+              <li class="intro__link">Монблан</li>
+            </ul>
+          </div>
+
+          <div class="intro__main-block">
+            <div class="intro__slider-btns">
+              <button class="intro__btn-back"><img src="./images/icons/strelka.svg" alt="кнопка назад"class="intro__arrow-image"></button>
+              <button class="intro__btn-forward"><img src="./images/icons/strelka.svg" alt="кнопка вперед"></button>
+            </div>
+            <div class="intro__main-text">
+              <h1 class="intro__title"></h1>
+              <div class="intro__block-btns">
+                <button type="button" class="intro__button-find"> <svg class="svg-image " width="13" height="13" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.625 0.875V4.625H0.875V5.375H4.625V9.125H5.375V5.375H9.125V4.625H5.375V0.875H4.625Z" fill="white" stroke="white" stroke-width="0.7"/>
+                  </svg>
+                  Выбрать квартиру</button>
+                <button type="button" class="intro__button-buy">Купить квартиру онлайн</button>
+              </div>
+            </div>
+          </div>  
+      </section>
+      <section class="intro__social" >
+        <nav class="intro__social-icons">
+          <a href="#" class="intro-social__block"><img src="./images/icons/Facebook.svg" alt="фэйсбук" class="intro-social__icon"></a>
+          <a href="#" style="margin-top: 3rem"class="intro-social__block"><img src="./images/icons/Instagram.svg" alt="инстаграм" class="intro-social__icon"></a>
+          <a href="#" style="margin-top: 3rem"class="intro-social__block"><img src="./images/icons/Twitter.svg" alt="твиттер" class="intro-social__icon"></a>
+          <a href="#" style="margin-top: 3rem" class="intro-social__block"><img src="./images/icons/Vkontakte.svg" alt="вконтаке" class="intro-social__icon"></a>
+        </nav>
+      </section>
+     <section class="slider">
+        <div class="slider-line">
+         <video class="slider-line__video" src="./videos/1.mp4" loop autoplay muted></video>
+         <video class="slider-line__video" src="./videos/2.mp4" loop autoplay muted></video>
+         <video class="slider-line__video" src="./videos/3.mp4" loop autoplay muted></video>
+         <video class="slider-line__video" src="./videos/4.mp4" loop autoplay muted></video>
+        </div>
+      </section>
+
+      <section class="flat">
+          <img src="" alt="картинка со зданием" class="flat__main-image">
+          <h5 class="flat__title"></h5>
+          <p class="flat__text"></p>
+      </section>
+<!-- поменят название  -->
+      <section class="footer">
+        <div class="footer__container">
+          <div class="footer__room">
+            <h5 class="footer__room-title">Количество комнат</h5>
+            <ul class="footer__room-btns">
+              <button type="button" class="footer__room-btn">Студия</button>
+              <button type="button" class="footer__room-btn">1</button>
+              <button type="button" class="footer__room-btn">2</button>
+              <button type="button" class="footer__room-btn">3</button>
+              <button type="button" class="footer__room-btn">4</button>
+            </ul>~
+          </div>
+  
+          <div class="footer__area">
+            <h5 class="footer__area-title">Площадь</h5>
+            <ul class="footer__area-btns">
+              <input id="min" type="number" class="footer__area-btn"  placeholder="от">
+              <input id="max" type="number" class="footer__area-btn"  placeholder="до">
+            </ul>
+            <div id="range-slider" class="footer__area-slider"></div>
+          </div>
+  
+          <div class="footer__cost">
+            <h5 class="footer__cost-title">Стоимость, млн ₽</h5>
+            <ul class="footer__cost-btns">
+              <input id="minimum" type="number" class="footer__cost-btn">
+              <input id="maximum" type="number" class="footer__cost-btn">
+            </ul>
+            <div id="range-slider__second" class="footer__area-slider"></div>
+  
+          </div>
+  
+          <div class="footer__comlplex">
+            <h5 class="footer__complex-title">Жилой комплекс</h5>
+            <button type="button" class="footer__complex-button">Северный парк</button>
+          </div>
+          <button type="button" class="footer__filter"><span>Еще фильтры</span></button>
+          <button type="button" class="footer__find">Показать 120 квартир</button>
+       </div>
+      </section>
+
+      <section class="find">
+        <div class="find__container">
+          <input type="text" class="find__input" placeholder="Подобрать квартиру" min="2" max="30">
+          <img src="./images/icons/Search.svg" alt="лупа" class="find__icon">
+        </div>
+      </section>
+    </main>
+</div>
+
+<div class="sidebar">
+  <nav class="sidebar-nav">
+    <a href="#" class="sidebar-nav__element">Квартиры</a>
+    <a href="#" class="sidebar-nav__element">Ипотека</a>
+    <a href="#" class="sidebar-nav__element">Коммерция</a>
+    <a href="#" class="sidebar-nav__element">Управляющая компания</a>
+  </nav>
+  <div class="sidebar__contact-info">
+    <a href="#" class="header__number sidebar__number">8-800-222-37-90</a>
+    <p class="header__work-time sidebar__work-time">Работаем ежедневно с 10:00 до 20:00</p>
+  </div>
+  <button class="sidebar__brg-menu"></button>
+</div>
+
+
+  <script src="./vendor/nouislider.min.js"></script>
+  <script src="./components/rangeSlider.js"></script>
+  <script type="module" src="./components/index.js"></script>
+  <script src="./components/headerLinks.js"></script>
+</body>
+</html>

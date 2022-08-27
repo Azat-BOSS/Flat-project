@@ -1,0 +1,53 @@
+$fFamily:'Montserrat', 'Arial', sans-serif;
+@mixin btnReset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+@mixin btnStyle {
+  color: white;
+  font-size: 1.75rem;
+  font-family: $fFamily;
+  border: .1rem solid white;
+  padding: 2rem;
+  border-radius: .5rem;
+}
+@mixin footerTitle {
+  font-family: $fFamily;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 13px;
+  color: #FFFFFF;
+  margin-bottom: 1.4rem;
+}
+@mixin footerBtn {
+  font-family: $fFamily;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #FFFFFF;
+  width: 10rem;
+  height: 5.6rem;
+  background: rgba(255, 255, 255, 0.16);
+  padding-left: 3.5rem;
+  @media screen and(max-width: 1580px){
+    width: 5rem;
+    height: 5.6rem;
+  }
+}
+@mixin headLink {
+  text-decoration: none;
+  font-family: $fFamily;
+  color: white;
+  font-size: 1.6rem;
+  margin-right: 3rem;
+  opacity: .8;
+  position: relative;
+  transition: opacity 1s linear;
+  font-weight: 400;
+}

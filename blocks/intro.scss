@@ -1,0 +1,360 @@
+
+
+.intro {
+  position: fixed;
+  width: 100%;
+  max-width: 168rem;
+  @media screen and (max-width: 1450px){
+    max-width: 144rem;
+  }
+	&__black-cover {
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      @media screen and(max-width: 1170px){
+        background-image: url('../images/mainImages/tenthFlat.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: rgba($color: #000000, $alpha: .4);
+      }
+		} 
+
+		&__container {
+      display: flex;
+      margin-top: 25rem;
+      justify-content: space-between;
+      align-items: flex-start;
+      position: relative;
+      @media screen and(max-width: 1280px){
+        flex-direction: column-reverse;
+        padding-bottom: 3rem;
+        padding-left: 4.7rem;
+        padding-right: 4.7rem;
+        margin-top: 20rem;
+      }
+      @media screen and(max-width: 1024px){
+        margin-top: 15rem;
+      }
+      @media screen and(max-width: 768px){
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 13rem;
+      }
+		}
+
+		&__image-banderole {
+      width: 18.8rem;
+      height: 5.5rem;
+      @media screen and(max-width: 1280px){
+       position: absolute;
+       right: -14rem;
+       bottom: 0;
+      }
+		}
+
+		&__block-links {
+      display: flex;
+      padding-left: 5rem;
+      @media screen and(max-width: 1280px){
+        display: none;
+      }
+		}
+
+		&__first-links {
+      display: flex;
+      flex-direction: column;
+      margin-right: 4rem;
+      max-width: 170px;
+ 
+		}
+
+		&__link {
+      font-family: $fFamily;
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: white;
+      margin-top: 1.3rem;
+      transition: transform .2s ease-in-out;
+      position: relative;
+      display: flex;
+      font-weight: 400;
+      cursor: pointer;
+		}
+    &__link:first-child {
+      margin-top: 0rem;
+    }
+
+    &__link:hover {
+      transform: translateX(-1rem);
+		}
+
+    &__link::after {
+      content: "";
+      display: block;
+      width: 0%;
+      border-radius: 1.5rem;
+      position: absolute;
+      transition: all .4s ease-in-out;
+      border: .1rem solid white;
+      opacity: 0;
+      bottom: -5px;
+		}
+    &__link:hover::after {
+      width: 90%;
+      opacity: 1;
+		}
+    &__link:nth-child(2):hover::after {
+      width: 100%;
+    }
+    &__link:nth-child(3):hover::after {
+      width: 35%;
+    }
+    &__link:nth-child(4):hover::after {
+      width: 90%;
+    }
+    &__link:nth-child(5):hover::after {
+      width: 40%;
+    }
+    
+
+		&__second-links {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    &__link-second:hover {
+      transform: translateX(-1rem);
+		}
+
+    &__link-second::after {
+      content: "";
+      display: block;
+      width: 0%;
+      border-radius: 1.5rem;
+      position: absolute;
+      transition: all .4s ease-in-out;
+      border: .1rem solid white;
+      opacity: 0;
+      bottom: -.5rem;
+		}
+    &__link-second:hover::after {
+      width: 90%;
+      opacity: 1;
+		}
+   
+    &__link-second:nth-child(1):hover::after {
+      width: 75%;
+    }
+    &__link-second:nth-child(2):hover::after {
+      width: 110%;
+    }
+    &__link-second:nth-child(3):hover::after {
+      width: 65%;
+    }
+    &__link-second:nth-child(4):hover::after {
+      width: 75%;
+    }
+  
+		&__main-block {
+      display: flex;
+      @media screen and(max-width: 1280px){
+        flex-direction:column-reverse;
+      }
+		}
+
+		&__title {
+      font-size: 3.4rem;
+      color: white;
+      max-width: 55rem;
+      font-family: $fFamily;
+      font-weight: 400;
+      margin-right: 3rem;
+      line-height: 140%;
+      @media screen and(max-width: 1280px){
+        font-size: 3rem;
+        line-height: 138%;
+      }
+      @media screen and(max-width: 940px){
+        width: 40rem;
+      }
+      @media screen and(max-width: 768px){
+        max-width: 40rem;
+        margin-right: 0;
+        font-size: 2.4rem;
+        max-width: 30rem;
+      }
+		}
+
+    &__title-bold {
+      font-weight: 500;
+    }
+		&__block-btns {
+      margin-top: 5rem;
+      @media screen and(max-width: 940px){
+        display: flex;
+        flex-direction: column;
+      }
+      @media screen and(max-width: 500px){
+        width: 23rem;
+        margin-top: 3rem;
+        }
+		}
+
+		&__button-find {
+      @include btnReset;
+      @include btnStyle;
+      width: 21rem;
+      height: 5.6rem;
+      padding: 0;
+      margin-right: 1.5rem;
+      position: relative;
+      font-size: 1.5rem;
+      transition: all 1s ease;
+      @media screen and(max-width: 940px){
+       margin-right: 0rem;
+       width: 30rem;
+      }
+      @media screen and(max-width: 500px){
+      width: 23rem;
+      font-size: 1.5rem;
+      }
+		}
+    .svg-image {
+      padding-right: 2rem;
+      width: 1.2rem;
+      height: 1.2rem;
+      path {
+        stroke: white;
+      }
+    }
+   
+    &__button-find:hover {
+      color: rgba($color: #000000, $alpha: 1);
+      background-color: white;
+      box-shadow: inset 0 0 0 50px #ffff;
+
+      .svg-image {
+        padding-right: 2rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        path {
+          stroke: black;
+        }
+      }
+		}
+
+  
+   
+		&__button-buy {
+      @include btnReset;
+      @include btnStyle;
+      border: none;
+      position: relative;
+      @media screen and(max-width: 940px){
+        margin-top: 3rem;
+        width: 30rem;
+       }
+       @media screen and(max-width: 500px){
+        width: 23rem;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+        }
+		}
+    &__button-buy::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-image: url('../images/icons/strelka.svg');
+      background-image: cover;
+      width: .8rem;
+      height: 1.2rem;
+      right: .6rem;
+      top: 42%;
+      transform: translateX(0);
+      transition: transform .4s ease-in-out;
+    }
+    &__button-buy:hover::after {
+      transform: translateX(.8rem);
+		}
+
+
+		&__slider-btns {
+      margin-right: 3rem;
+      @media screen and(max-width: 1280px){
+      margin-top: 5rem;
+      }
+      @media screen and(max-width: 1170px){
+        display: none;
+        }
+		}
+
+		&__btn-back {
+      @include btnReset;
+      margin-right: 1rem;
+      border: .2rem solid rgb(255, 255, 255);
+      padding: 1.2rem 1.4rem;
+      border-radius: 100%;
+      opacity: .6;
+		}
+
+    &__btn-forward {
+      @include btnReset;
+      padding: 1.2rem 1.4rem;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+    &__arrow-image {
+      transform: rotate(180deg);
+      opacity: .7;
+    }
+
+/* ---------- */
+    &__social {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 15rem;
+      margin-left: 4.4rem;
+      @media screen and(max-width: 1580px){
+        margin-top: 5rem;
+      }
+      @media screen and(max-width: 1280px){
+        display: none;
+      }
+    }
+  
+    &__social-icons {
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+  .intro-social {
+ 
+    &__block {
+      transition: .4s linear;
+      &:hover {
+        opacity: .6;
+      }
+    }
+  
+    &__icon {
+      transition: .4s linear;
+      &:hover {
+        opacity: .6;
+      }
+
+    }
+  }
+
+}

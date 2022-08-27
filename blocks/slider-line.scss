@@ -1,0 +1,9 @@
+.slider-line {
+  display: flex;
+  transition: 1.5s ease-in-out;
+    min-width: 100vw;
+      height: 100vh;
+		&__video {
+      position: relative;
+		}
+}
